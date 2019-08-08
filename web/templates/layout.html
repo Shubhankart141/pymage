@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="UTF-8" />
+	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	        <meta name="description" content="random interesting images grabbed from all over the internet" />
+	        <meta name="keywords" content="interesting, adult, reddit, embarassed" />
+	        <link rel="shortcut icon" href="../favicon.ico"> 
+	        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='demo.css') }}" />
+	        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+			<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+			{% if title %}
+				<title>{{ title }}</title>
+			{% else %}
+				<title>Missing title</title>
+			{% endif %}
+	</head>
+
+    <body id="page">
+        <ul class="cb-slideshow">
+        	{% block content %} {% endblock content %}
+            <li><span>Image 01</span><div><h3>se·ren·i·ty</h3></div></li>
+                        <li><span>Image 02</span><div><h3>com·po·sure</h3></div></li>
+                        <li><span>Image 03</span><div><h3>e·qua·nim·i·ty</h3></div></li>
+                        <li><span>Image 04</span><div><h3>bal·ance</h3></div></li>
+                        <li><span>Image 05</span><div><h3>qui·e·tude</h3></div></li>
+                        <li><span>Image 06</span><div><h3>re·lax·a·tion</h3></div></li>
+        </ul>
+        <div class="container">
+            <!-- Codrops top bar -->
+            <div class="codrops-top">
+                <span class="right">
+                    Total Pictures - X   
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+            <header>
+                <h1>My <span>Website</span></h1>
+                <h2>Let the internet surprise you!</h2>
+				<!-- <p class="codrops-demos">
+					<a href="index.html">Demo 1</a>
+					<a class="current-demo" href="index2.html">Demo 2</a>
+					<a href="index3.html">Demo 3</a>
+					<a href="index4.html">Demo 4</a>
+				</p> -->
+            </header>
+        </div>
+    </body>
+</html>
